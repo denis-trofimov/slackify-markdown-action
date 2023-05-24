@@ -1,16 +1,16 @@
-name: 'Slack Markdown Converter'
+name: 'Slack Markdown Converter valid for Slack API'
 author: 'Joshua Coady'
-description: "Converts markdown to Slack's mrkdwn"
+description: "Converts markdown to Slack's mrkdwn with the new lines substitution, valid for Slack API"
 inputs:
   text:
     description: 'Markdown text to convert'
     required: true
 outputs:
   text:
-    description: 'Converted Slack mrkdwn text'
+    description: 'Converted Slack mrkdwn text with substituted new lines'
 runs:
   using: 'node12'
   main: 'index.js'
 branding:
-  icon: 'heart'
-  color: 'red'
+  icon: 'list'
+  color: 'blue'
