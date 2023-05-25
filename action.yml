@@ -9,7 +9,7 @@ outputs:
   text:
     description: 'Converted Slack mrkdwn text with substituted new lines'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
 branding:
   icon: 'list'
