@@ -30,12 +30,13 @@ jobs:
 
             * List Item 1
             * List Item 2
+            * [x] List Item 3
 
       - name: Verify
         shell: bash
         env:
           ACTUAL: ${{ steps.convert.outputs.text }}
-          EXPECTED: '*Heading 1*\n\n*Heading 2*\n\n<http://example.com|Link>\n\n•   List Item 1\n•   List Item 2\n'
+          EXPECTED: '*Heading 1*\n\n*Heading 2*\n\n<http://example.com|Link>\n\n•   List Item 1\n•   List Item 2\n•   [x] List Item 3\n'
         run: |
           if [ "$ACTUAL" != "$EXPECTED" ]; then
             echo "Actual: $ACTUAL"
